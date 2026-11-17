@@ -1,0 +1,20 @@
+{
+  "_doc": "ID member Google Chat space (DATA CONTOH). CATATAN ATURAN dari produksi: 'Dane' = anak magang (kolom sheet, tanpa google_id) dan supervisor (BUKAN anggota roster) adalah DUA ORANG BERBEDA yang namanya bisa tertukar. Keduanya TIDAK PERNAH di-mention; supervisor diecualikan lewat blok 'excluded' di bawah.",
+  "space_id": "<SPACE_ID>",
+  "updated": "2026-01-01",
+  "roster": {
+    "alice": {"name": "Alice", "email": "alice@example.com", "google_id": "1000000000000000001"},
+    "budi":  {"name": "Budi",  "email": "budi@example.com",  "google_id": "1000000000000000002"},
+    "citra": {"name": "Citra", "email": "citra@example.com", "google_id": "1000000000000000003"},
+    "dedi":  {"name": "Dedi",  "email": "dedi@example.com",  "google_id": "1000000000000000004"}
+  },
+  "other_members": {},
+  "roster_without_id": ["dane"],
+  "excluded": {
+    "supervisor": {
+      "name": "<Nama Supervisor>",
+      "google_id": "<ID_SUPERVISOR_TIDAK_PERNAH_DIPAKAI>",
+      "reason": "diminta user untuk dikecualikan - bukan anggota roster"
+    }
+  }
+}

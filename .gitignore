@@ -1,0 +1,14 @@
+# Rahasia & state - JANGAN pernah di-commit
+credentials.json
+vidio_api_key.json
+alerted.json
+alerted_demo.json
+roster_sheet_cache.json
+member_ids.json
+
+# Log (dibuat sendiri tiap run)
+*.log
+
+# Python
+__pycache__/
+*.py[cod]

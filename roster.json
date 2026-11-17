@@ -1,0 +1,53 @@
+{
+  "_format": "Roster oncall (DATA CONTOH untuk Mode Demo)",
+  "_sumber_shift": "Produksi: Google Sheets roster -> tab jadwal shift. Field 'shifts' di bawah dipakai sebagai FALLBACK kalau sheet tidak bisa dibaca (Mode Demo / sheet error).",
+  "_sheet_aliases": "sheet_aliases = nama kolom di sheet (nama panggilan). Dipakai alert_match.py untuk mencocokan kolom sheet ke orang ini.",
+  "_mention_syntax": "alert_match.py otomatis membungkus google_id jadi <users/{id}>",
+  "_isi_google_id": "google_id numerik dipasang dari people_ids.json. ID di file ini SEMUA contoh (tidak nyata).",
+  "_aturan_exclusion": "DUA aturan yang tidak boleh dilanggar: (1) kolom sheet 'Dane' = anak magang -> google_id sengaja KOSONG, jadi tidak pernah di-mention; (2) supervisor/BOS bukan anggota roster -> ID-nya hanya dicatat di people_ids.json blok 'excluded'.",
+  "people": [
+    {
+      "name": "Alice",
+      "email": "alice@example.com",
+      "google_id": "1000000000000000001",
+      "sheet_aliases": ["Alice"],
+      "shifts": [
+        { "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], "start": "09:00", "end": "21:00" }
+      ]
+    },
+    {
+      "name": "Budi",
+      "email": "budi@example.com",
+      "google_id": "1000000000000000002",
+      "sheet_aliases": ["Budi"],
+      "shifts": [
+        { "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], "start": "21:00", "end": "09:00" }
+      ]
+    },
+    {
+      "name": "Citra",
+      "email": "citra@example.com",
+      "google_id": "1000000000000000003",
+      "sheet_aliases": ["Citra"],
+      "shifts": [
+        { "days": ["mon", "tue", "wed", "thu", "fri"], "start": "09:00", "end": "19:00" }
+      ]
+    },
+    {
+      "name": "Dedi",
+      "email": "dedi@example.com",
+      "google_id": "1000000000000000004",
+      "sheet_aliases": ["Dedi"],
+      "shifts": [
+        { "days": ["sat", "sun"], "start": "11:00", "end": "23:00" }
+      ]
+    },
+    {
+      "name": "Dane (magang)",
+      "email": "",
+      "google_id": "",
+      "sheet_aliases": ["Dane"],
+      "shifts": []
+    }
+  ]
+}

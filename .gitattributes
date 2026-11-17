@@ -1,0 +1,8 @@
+# Paksa ending baris supaya konsisten di PC mana pun (clone -> tetap jalan)
+*.bat   text eol=crlf
+*.vbs   text eol=crlf
+*.py    text eol=lf
+*.js    text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.gitignore text eol=lf
